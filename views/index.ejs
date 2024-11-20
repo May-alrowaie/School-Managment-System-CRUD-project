@@ -1,0 +1,89 @@
+<!-- views/index.ejs -->
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+  </head>
+  <body>
+    <h1>Welcome to the School Management System !</h1>
+  </body>
+</html>
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="School Management System" />
+    <title>School Management System</title>
+    <link rel="stylesheet" href="views/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <h1>SchoolMS</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#students">Students</a></li>
+          <li><a href="#teachers">Teachers</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#classrooms">Classrooms</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h2>Welcome to School Management System</h2>
+        <p>Manage students, teachers, courses, and schedules efficiently.</p>
+        <a href="#students" class="cta-btn">Get Started</a>
+      </section>
+
+      <section class="features">
+        <div class="feature-card" id="students">
+          <h3>Students</h3>
+          <p>
+            View and manage student information, including enrollment details.
+          </p>
+          <a href="/api/students">Manage Students</a>
+        </div>
+        <div class="feature-card" id="teachers">
+          <h3>Teachers</h3>
+          <p>View teacher details and assign them to courses.</p>
+          <a href="/api/teachers">Manage Teachers</a>
+        </div>
+        <div class="feature-card" id="courses">
+          <h3>Courses</h3>
+          <p>Create, update, and delete courses for your curriculum.</p>
+          <a href="/api/courses">Manage Courses</a>
+        </div>
+        <div class="feature-card" id="classrooms">
+          <h3>Classrooms</h3>
+          <p>Allocate and manage classrooms for schedules.</p>
+          <a href="/api/classrooms">Manage Classrooms</a>
+        </div>
+        <div class="feature-card" id="schedule">
+          <h3>Schedule</h3>
+          <p>Create timetables and manage course schedules.</p>
+          <a href="/api/schedules">Manage Schedule</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 School Management System. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

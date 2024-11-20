@@ -27,7 +27,7 @@ app.use(morgan("dev"))
 
 // GET /
 app.get("/", async (req, res) => {
-  res.send("hello, friend!")
+  res.render("index.ejs")
 })
 
 app.listen(port, () => {
